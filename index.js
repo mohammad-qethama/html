@@ -1,60 +1,69 @@
+ function welcomeMassage(namepar) {
+
+    var hello = document.getElementById('welcome'); 
+    if (namepar != 'Philip Zimbardo'){
+    console.log('the if statment'+namepar);
+    hello.textContent = 'Welcome ' + namepar + '!';
+
+      }
+
+    else{
+
+    hello.textContent = 'Welcome!'  ;
+      }
+  
+  }
+
+function funcValidateEntrys (){
+  while (car !== 'audi' && car !== 'mercedes' ){
+
+    var car = prompt ("Do you want an Audi or a Mercedes?").toLowerCase();
+  }
+  return car;
+}
+
+function checkCarType(cartype){
+  var HisCar = '';
+    if (cartype == "audi")
+  {
+    HisCar = '<img src="Audi.jpg" alt="Audi">';
+
+  } else if (cartype == "mercedes" ){
+
+    HisCar = '<img src = "Mercedes.jpg" alt= "Mercedes">';
+  
+  }
+  return HisCar;
+}
+
+var result = '';
+
+function addRequstedNumber(carsnumber,HisCar)
+{ 
+  for (var i = 0 ; i < carsnumber; i++)
+  {
+    result = result + HisCar+' '+(i+1) ;
+    console.log(i+'times is the counter');
+  }
+}
+
+
 alert('FAST BOLD CARS ');
 
 
 var name = prompt("What's your name ? ", "Philip Zimbardo");
 
+welcomeMassage(name);
 
-console.log('his name is '+ name );
+var userentry = funcValidateEntrys(); 
+var cartype = checkCarType(userentry);
+var carsnumber = prompt(`how Many cars do you want `) ; 
 
-
-
-// function welcomemassage(){
-
-var hello = document.getElementById('welcome'); 
-if (name != 'Philip Zimbardo'){
-console.log('the if statment'+name);
-hello.textContent = 'Welcome ' + name + '!';
-
-}
-
-else{
-
-  hello.textContent = 'Welcome!'  ;
-}
-var car = '';
+addRequstedNumber(carsnumber,cartype);
 
 
 
-while (car !== 'Audi' && car !== 'Mercedes' ){
-
-  var car = prompt ("Do you want an Audi or a Mercedes?");
-
-}
-
-var carsnumber = prompt(`how Many cars do you want `) ;
+document.getElementById("CARS").innerHTML = result;
 
 console.log('his car is '+ car);
 console.log('he wants '+ carsnumber+ ' cars');
-
-
-var HisCar = '';
-
-if (car == "Audi")
-{
-HisCar = '<img src="Audi.jpg" alt="Audi">';
-
-} else if (car == "Mercedes" ){
-
-HisCar = '<img src = "Mercedes.jpg" alt= "Mercedes">';
-  
-}
-var result = '';
-for (var i = 0 ; i < carsnumber; i++)
-{
-  result = result + HisCar+' '+(i+1) ;
-console.log(i+'times is the counter');
-}
-document.getElementById("CARS").innerHTML = result;
-
-// }
-// welcomemassage();
