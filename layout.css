@@ -1,0 +1,80 @@
+body{
+ width: 960px;
+ margin: auto;
+background-color:gray;
+
+
+
+}
+header img {
+ width: 160px;
+
+ 
+margin-right: 150px;
+}
+header h1 { 
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    background-color: red;
+   font-size: 50px;
+    margin-right: 250px
+    
+    
+}
+header ul li {
+display: inline;
+color:black;
+line-height: 15px;
+width: 550px;
+padding-left: 100px;
+
+margin-top: 60px;
+font-size: 25px;
+
+}
+
+#Intro {
+color: red;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 40px;
+
+}
+.large {
+width: 800px;
+
+}
+
+.large2 {
+    width: 800px;
+}
+.other{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: saddlebrown;
+    font-size: 30px;
+
+
+
+}
+footer {
+
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    /* height: 50px; */
+    line-height: 50px;
+
+}
+
+#CARS {
+    width: 40px;
+
+
+}
+#welcome {
+
+    width: 50px;
+    color: black;
+    font-family: fantasy;
+    float: inherit;
+}

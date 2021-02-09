@@ -26,11 +26,11 @@ function checkCarType(cartype){
   var HisCar = '';
     if (cartype == "audi")
   {
-    HisCar = '<img src="Audi.jpg" alt="Audi">';
+    HisCar = '<img  style="width:300px;" src="Audi.jpg" alt="Audi">';
 
   } else if (cartype == "mercedes" ){
 
-    HisCar = '<img src = "Mercedes.jpg" alt= "Mercedes">';
+    HisCar = '<img style="width:300px;" src = "Mercedes.jpg" alt= "Mercedes">';
   
   }
   return HisCar;
